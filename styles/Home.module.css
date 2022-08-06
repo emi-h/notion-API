@@ -2,13 +2,14 @@
   text-align: center;
 }
 .container {
-  padding: 0 2rem;
+  padding: 0 1rem;
   width: 800px;
   max-width: 100%;
   margin: 60px auto 0;
 }
 .list{
   list-style:none;
+  padding-left: 0;
 }
 .list li{
   margin-bottom: 2em;

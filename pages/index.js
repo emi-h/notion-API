@@ -9,21 +9,15 @@ export async function getStaticProps() {
     database_id: databaseId
   });
 
-  // console.log(response);
-  // console.log(databaseId);
-  // console.log(process.env.NOTION_KEY);
-
   return {
     props: {
       results: response.results,
-    }
+    },
+    revalidate: 10
   }
 }
 
 export default function Home({ results }) {
-  // useEffect(() => {
-  //   console.log(results);
-  // }, []);
   return (
     <>
       <h1 className={styles.siteTtl}>Notion API</h1>

@@ -1,6 +1,5 @@
-import styles from '../styles/Home.module.css'
+import styles from 'src/styles/Home.module.css'
 import { Client } from '@notionhq/client'
-import { useEffect } from 'react';
 
 export async function getStaticProps() {
   const notion = new Client({ auth: process.env.NOTION_KEY });

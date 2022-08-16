@@ -14,11 +14,11 @@ export async function getStaticProps() {
     props: {
       results: response.results,
     },
-    // revalidate: 10
+    revalidate: 10
   }
 }
 
-const Home:NextPage<QueryDatabaseResponse>=({ results })=> {
+const Home:NextPage<any>=({ results })=> {
   return (
     <>
       <h1 className={styles.siteTtl}>Notion API</h1>
